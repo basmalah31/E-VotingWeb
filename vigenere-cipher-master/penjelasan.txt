@@ -1,0 +1,52 @@
+length = 5
+kl = 3
+
+text[0] = B = 66
+text[1] = O = 79
+text[2] = B = 60
+text[3] = O = 79
+text[4] = L = 76
+
+pswd[0] = K = 75
+pswd[1] = E = 69
+pswd[2] = Y = 89
+
+ENCRYPT :
+
+ki = 0 = K
+PERULANGAN 1:
+text[0] = B = 66 - 65 = 1
+pswd[0] = K = 75 - 65 = 10
+	= 1 + 10 = 11 + 65 = L
+
+ki = 1 = E
+PERULANGAN 2:
+text[1] = O = 79 - 65 = 14
+pswd[1] = E = 69 - 65 = 4
+	= 14 + 4 = 18 = S
+
+ki = 2 = Y
+PERULANGAN 3:
+text[2] = B = 66 - 65 = 1
+pswd[2] = Y = 89 - 65 = 24
+	= 1 + 24 = 25 = Z
+
+ki = 0 = K
+PERULANGAN 4:
+text[3] = O = 79 - 65 = 14
+pswd[0] = K = 75 - 65 = 10
+	= 14 + 10 = 24 = Y
+
+ki = 1 = E
+PERULANGAN 4:
+text[4] = L = 76 - 65 = 11
+pswd[0] = E = 69 - 65 = 4
+	= 11 + 4 = 15 = P
+
+
+DECRYPT : 
+H = 72 - 65 = 7
+Y = 89 - 65 = 24
+-17 + 26 = 9 + 65 = 74
+
+kenapa pakai x? karena nantinya pasti ada bilangan negatif karena decrypt menggunakan pengurangan, sehingga saya menggunakan variabel x untuk memudahkan mencari dan memasukannya kedalam kondisi.
